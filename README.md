@@ -1,0 +1,1 @@
+This is a Quarto extension for making revealjs slides easier to work with
