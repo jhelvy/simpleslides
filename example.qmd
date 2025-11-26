@@ -1,0 +1,282 @@
+---
+title: "simpleslides Demo"
+subtitle: "Easy Slide Creation with Quarto"
+author: "John Paul Helveston & Pingfan Hu"
+date: "2025-11-25"
+format: simpleslides-revealjs
+---
+
+## Welcome to simpleslides
+
+A Quarto extension that makes creating slides .red[easier] and more .blue[intuitive]!
+
+Key features:
+
+- .green[Colored text] without HTML
+- Easy layouts without `:::` fences
+- Simple slide breaks with `---`
+
+---
+
+# Text Styling
+
+You can easily style text with colors:
+
+.red[Red], .blue[Blue], .green[Green], .yellow[Yellow], .orange[Orange]
+
+.purple[Purple], .gray[Gray], .pink[Pink], .teal[Teal]
+
+You can also .bold[make text bold], .italic[italicize it], or make it .large[larger].
+
+---
+
+# Hex Colors
+
+Use any hex color with `.color-HEXCODE[text]`:
+
+.color-FF1744[Custom Red (#FF1744)]
+
+.color-00BCD4[Custom Cyan (#00BCD4)]
+
+.color-FFD700[Gold (#FFD700)]
+
+Background colors work too with `.bg-color-HEXCODE[text]`:
+
+.bg-color-9C27B0[Purple background]
+
+.bg-color-FF5722[Deep orange background]
+
+---
+
+# Multiple Classes
+
+Stack classes for combined effects:
+
+.red.bold[Bold red text]
+
+.large.blue[Large blue text]
+
+.huge.green[Huge green text]
+
+.tiny.gray[Tiny gray text]
+
+---
+
+# Background Colors
+
+Highlight important content:
+
+.bg-red[Important alert]
+
+.bg-blue[Information box]
+
+.bg-green[Success message]
+
+Background colors automatically use white text for contrast!
+
+---
+
+# Two-Column Layouts
+
+.pull-left[
+### Left Column
+
+- Point one
+- Point two
+- Point three
+
+Easy to create without `:::` fences!
+]
+
+.pull-right[
+### Right Column
+
+- Different content
+- On the right side
+- Side by side layout
+
+.green[Much simpler syntax!]
+]
+
+---
+
+# Multi-Column Layouts
+
+Use flexbox for 3+ columns:
+
+.columns[
+.col[
+**Column 1**
+
+Auto width
+]
+
+.col[
+**Column 2**
+
+Equal sizing
+]
+
+.col[
+**Column 3**
+
+Responsive
+]
+]
+
+---
+
+# Incremental Reveals
+
+Content can appear incrementally:
+
+.fragment[First this appears]
+
+.fragment[Then this]
+
+.fragment[Finally this]
+
+Works great for storytelling!
+
+---
+
+# Fragment Blocks
+
+.fragment[
+### Whole sections can appear together
+
+- Including
+- All these
+- Bullet points
+]
+
+.fragment[
+.large.blue[Perfect for step-by-step reveals!]
+]
+
+---
+
+# Combining Features
+
+.pull-left[
+.fragment[
+### .teal[Left Side]
+
+Incremental content on the left
+]
+
+.fragment[
+- .red[Point 1]
+- .blue[Point 2]
+]
+]
+
+.pull-right[
+.fragment[
+### .purple[Right Side]
+
+And on the right too!
+]
+
+.fragment[
+.large[Very .bold[flexible!]]
+]
+]
+
+---
+
+# Centered Content
+
+.center[
+.huge[BIG CENTERED TEXT]
+]
+
+.center[
+Perfect for emphasis
+]
+
+.center[
+.green.large[Easy to center anything!]
+]
+
+---
+
+# Real Example
+
+A quarterly revenue comparison:
+
+.pull-left[
+**Q4 2024**
+
+- Revenue: .red[$2.8M]
+- Growth: .red[+12%]
+- Customers: 1,240
+]
+
+.pull-right[
+**Q4 2025**
+
+- Revenue: .green[$4.5M]
+- Growth: .green[+61%]
+- Customers: 2,100
+]
+
+.center[
+.fragment[
+.huge.bold.green[↑ 61% Growth!]
+]
+]
+
+---
+
+# Typography Utilities
+
+Size options:
+
+.tiny[Tiny (60%)] .smaller[Smaller (70%)] .small[Small (85%)]
+
+Normal (100%)
+
+.large[Large (130%)] .larger[Larger (150%)] .huge[Huge (200%)]
+
+Style options:
+
+.bold[Bold] .italic[Italic] .underline[Underlined] .strike[Strikethrough]
+
+---
+
+# Comparison
+
+**Standard Quarto:**
+```html
+<span style="color: red;">Red text</span>
+```
+
+**simpleslides:**
+```markdown
+.red[Red text]
+```
+
+.green[73% less typing!]
+
+---
+
+# Documentation
+
+- **README.md**: Quick start guide
+- **MANUAL.md**: Complete documentation
+- **PLAN.md**: Implementation details
+
+Visit the repository for more examples!
+
+---
+
+# Thank You!
+
+.center[
+.large[Questions?]
+
+.teal[github.com/yourusername/simpleslides]
+
+.small.gray[Built with Quarto & Reveal.js]
+]

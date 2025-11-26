@@ -1,0 +1,255 @@
+/*
+ * simpleslides - Quarto Extension Styles
+ * Authors: John Paul Helveston, Pingfan Hu
+ * Version: 0.1.0
+ */
+
+/*-- scss:defaults --*/
+
+/* Color Palette (WCAG AA Compliant) */
+
+$red: #E74C3C;
+$blue: #3498DB;
+$green: #2ECC71;
+$yellow: #F39C12;
+$orange: #E67E22;
+$purple: #9B59B6;
+$gray: #95A5A6;
+$pink: #FD79A8;
+$teal: #2C8475;
+
+/*-- scss:rules --*/
+
+/* Text Color Classes */
+
+.red { color: $red !important; }
+.blue { color: $blue !important; }
+.green { color: $green !important; }
+.yellow { color: $yellow !important; }
+.orange { color: $orange !important; }
+.purple { color: $purple !important; }
+.gray { color: $gray !important; }
+.pink { color: $pink !important; }
+.teal { color: $teal !important; }
+
+/* Semantic color aliases */
+.primary { color: $blue !important; }
+.secondary { color: $gray !important; }
+.accent { color: $teal !important; }
+.muted { color: $gray !important; }
+
+/* ============================================================================
+   Background Color Classes
+   ============================================================================ */
+
+.bg-red {
+  background-color: $red !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-blue {
+  background-color: $blue !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-green {
+  background-color: $green !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-yellow {
+  background-color: $yellow !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-orange {
+  background-color: $orange !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-purple {
+  background-color: $purple !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-gray {
+  background-color: $gray !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-pink {
+  background-color: $pink !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.bg-teal {
+  background-color: $teal !important;
+  color: white !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+/* ============================================================================
+   Typography Utilities
+   ============================================================================ */
+
+/* Size classes */
+.tiny { font-size: 0.6em !important; }
+.smaller { font-size: 0.7em !important; }
+.small { font-size: 0.85em !important; }
+.large { font-size: 1.3em !important; }
+.larger { font-size: 1.5em !important; }
+.huge { font-size: 2em !important; }
+
+/* Weight classes */
+.bold { font-weight: bold !important; }
+.light { font-weight: 300 !important; }
+.normal { font-weight: normal !important; }
+
+/* Style classes */
+.italic { font-style: italic !important; }
+.underline { text-decoration: underline !important; }
+.strike { text-decoration: line-through !important; }
+
+/* ============================================================================
+   Layout Utilities - xaringan inspired
+   ============================================================================ */
+
+/* Center content */
+.center {
+  text-align: center !important;
+  display: block;
+}
+
+/* Two-column layout (xaringan classic) */
+.pull-left {
+  float: left;
+  width: 47%;
+  padding-right: 2%;
+}
+
+.pull-right {
+  float: right;
+  width: 47%;
+  padding-left: 2%;
+}
+
+/* Clear floats after pull-left/pull-right */
+.pull-left::after,
+.pull-right::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Modern flexbox columns */
+.columns {
+  display: flex !important;
+  gap: 1em;
+  align-items: flex-start;
+
+  .col {
+    flex: 1;
+  }
+}
+
+/* ============================================================================
+   Reveal.js Integration
+   ============================================================================ */
+
+/* Speaker notes (Reveal.js handles the .notes class) */
+.notes {
+  /* Styling handled by Reveal.js */
+}
+
+/* Fragments (Reveal.js handles the .fragment class) */
+.fragment {
+  /* Styling handled by Reveal.js */
+}
+
+/* ============================================================================
+   Additional Utilities
+   ============================================================================ */
+
+/* Image helpers */
+.img-center {
+  text-align: center;
+  display: block;
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+.img-50 img {
+  width: 50% !important;
+}
+
+.img-75 img {
+  width: 75% !important;
+}
+
+.img-25 img {
+  width: 25% !important;
+}
+
+/* Clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============================================================================
+   Responsive Adjustments
+   ============================================================================ */
+
+@media screen and (max-width: 768px) {
+  .pull-left,
+  .pull-right {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+}
+
+/* ============================================================================
+   Print Styles
+   ============================================================================ */
+
+@media print {
+  .bg-red,
+  .bg-blue,
+  .bg-green,
+  .bg-yellow,
+  .bg-orange,
+  .bg-purple,
+  .bg-gray,
+  .bg-pink,
+  .bg-teal {
+    color: black !important;
+    background-color: transparent !important;
+    border: 1px solid currentColor;
+  }
+}
